@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tanks_vector.svg-25bf6b6876c6aa4ed3b6daa07e9867a2.stex"
+path="res://.import/Tank_Barrel.png-78181cb4fe944bd65f74a02aff74e26c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tanks_vector.svg"
-dest_files=[ "res://.import/tanks_vector.svg-25bf6b6876c6aa4ed3b6daa07e9867a2.stex" ]
+source_file="res://Assets/Tank/Tank_Barrel.png"
+dest_files=[ "res://.import/Tank_Barrel.png-78181cb4fe944bd65f74a02aff74e26c.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
