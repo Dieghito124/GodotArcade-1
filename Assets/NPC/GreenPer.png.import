@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GreenPer.png-2d2a5e4a65acc248c9370d39eddfafc2.stex"
+path="res://.import/GreenPer.png-ba8519702f45230c12145e04363c0073.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/People/GreenPer.png"
-dest_files=[ "res://.import/GreenPer.png-2d2a5e4a65acc248c9370d39eddfafc2.stex" ]
+source_file="res://Assets/NPC/GreenPer.png"
+dest_files=[ "res://.import/GreenPer.png-ba8519702f45230c12145e04363c0073.stex" ]
 
 [params]
 
