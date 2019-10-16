@@ -10,18 +10,23 @@ scale = Vector2( 1, -1 )
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
 
-[node name="Body" type="Sprite" parent="."]
+[node name="Body" type="Node2D" parent="."]
+
+[node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
 
-[node name="Cannon" type="Sprite" parent="."]
+[node name="Cannon" type="Node2D" parent="."]
+
+[node name="BulletSpawnPos" type="Position2D" parent="Cannon"]
+position = Vector2( 0, 90 )
+
+[node name="CannonSprite" type="Sprite" parent="Cannon"]
 position = Vector2( 0, 40 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
-[node name="Position2D" type="Position2D" parent="Cannon"]
-position = Vector2( 0, 100 )
-scale = Vector2( 2, 2 )
+[node name="BulletPath" type="Path2D" parent="."]
+position = Vector2( 1.08075, 11.3476 )
 
-[node name="Line2D" type="Line2D" parent="."]
-texture_mode = 0
+[node name="PathFollow2D" type="PathFollow2D" parent="BulletPath"]
