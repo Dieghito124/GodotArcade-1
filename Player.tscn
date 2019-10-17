@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://Bullet.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=4]
 
-
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array(  )
+}
 
 [node name="Player" type="Node2D"]
 scale = Vector2( 1, -1 )
@@ -30,5 +33,6 @@ texture = ExtResource( 4 )
 
 [node name="BulletPath" type="Path2D" parent="."]
 position = Vector2( 1.08075, 11.3476 )
+curve = SubResource( 1 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="BulletPath"]
