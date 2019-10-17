@@ -19,6 +19,10 @@ config/name="GodotArcade"
 run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Events="*res://globals/Events.tscn"
+
 [importer_defaults]
 
 texture={

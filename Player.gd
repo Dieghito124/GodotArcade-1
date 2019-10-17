@@ -1,7 +1,5 @@
 extends Node2D
 
-signal player_shot(bullet_spawn_pos)
-
 export var bullet_scene : PackedScene
 var bullet_spawn_pos : Vector2
 
@@ -14,4 +12,4 @@ func _process(delta: float) -> void:
 
 func _on_Shot_pressed() -> void:
 	bullet_spawn_pos = $Cannon/BulletSpawnPos.global_position
-	emit_signal("player_shot", bullet_spawn_pos)
+	Events.emit_signal("player_shot", bullet_spawn_pos)

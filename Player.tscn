@@ -2,8 +2,10 @@
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://Bullet.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Tank/Tank.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Tank/Tank_Barrel.png" type="Texture" id=4]
+[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=3]
+[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=4]
+
+
 
 [node name="Player" type="Node2D"]
 scale = Vector2( 1, -1 )
