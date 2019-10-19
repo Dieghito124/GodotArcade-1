@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Bullet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Player.gd" type="Script" id=1]
+[ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=4]
 
@@ -37,8 +37,10 @@ position = Vector2( 1.08075, 11.3476 )
 curve = SubResource( 1 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="BulletPath"]
+position = Vector2( -0.832169, 1.10956 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
+[connection signal="tween_started" from="Tween" to="." method="_on_Tween_started"]
