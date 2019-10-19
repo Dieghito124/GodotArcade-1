@@ -12,9 +12,8 @@ func _input(event: InputEvent) -> void:
             if get_global_mouse_position().x > get_viewport_rect().size.x / 2: 
                 angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
         $Tween.interpolate_property($Cannon, "rotation", $Cannon.rotation,
-            $Cannon.rotation + angle, 0.5, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
+            $Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
         $Tween.start()
-        print($Cannon.rotation)
 
 func _on_Shot_pressed() -> void:
 	bullet_spawn_pos = $Cannon/BulletSpawnPos.global_position
