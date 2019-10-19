@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CanzoneArcade1.wav-664cd10c7193456aefb1aae5da38ee32.sample"
+
+[deps]
+
+source_file="res://sound/music/CanzoneArcade1.wav"
+dest_files=[ "res://.import/CanzoneArcade1.wav-664cd10c7193456aefb1aae5da38ee32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -28,3 +28,4 @@ func _on_Shot_pressed() -> void:
 
 func _on_Tween_all_completed() -> void:
 	pass # Replace with function body.
+
