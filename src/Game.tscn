@@ -23,3 +23,5 @@ flat = true
 position = Vector2( 510, 600 )
 
 [node name="Bullets" type="Node" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
