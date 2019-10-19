@@ -1,14 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://Bullet.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=3]
 [ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=4]
 
-
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array(  )
+}
 
 [node name="Player" type="Node2D"]
-scale = Vector2( 1, -1 )
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
 
@@ -21,14 +23,22 @@ texture = ExtResource( 3 )
 [node name="Cannon" type="Node2D" parent="."]
 
 [node name="BulletSpawnPos" type="Position2D" parent="Cannon"]
-position = Vector2( 0, 90 )
+position = Vector2( 0, -90 )
 
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
-position = Vector2( 0, 40 )
+position = Vector2( 0, -19 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
+offset = Vector2( 0, -40 )
+flip_v = true
 
 [node name="BulletPath" type="Path2D" parent="."]
 position = Vector2( 1.08075, 11.3476 )
+curve = SubResource( 1 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="BulletPath"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]

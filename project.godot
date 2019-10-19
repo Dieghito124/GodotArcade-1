@@ -46,6 +46,14 @@ texture={
 "svg/scale": 1.0
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[locale]
+
+locale_filter=[ 0, [  ] ]
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
