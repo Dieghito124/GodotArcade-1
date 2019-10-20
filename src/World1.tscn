@@ -9,29 +9,5 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 510, 600 )
 
 [node name="Bullets" type="Node" parent="."]
-
-[node name="Obstacles" type="Node" parent="."]
-
-[node name="StaticBody2D" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 500, 220 )
-
-[node name="StaticBody2D2" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 680, 64.7541 )
-
-[node name="StaticBody2D3" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 730, 64.7541 )
-
-[node name="StaticBody2D4" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 780, 64.7541 )
-
-[node name="StaticBody2D5" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 830, 64.7541 )
-
-[node name="StaticBody2D6" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 880, 64.7541 )
-
-[node name="StaticBody2D7" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 934.617, 64.7541 )
