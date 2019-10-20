@@ -1,4 +1,5 @@
 extends Node
+
 """
 QUA CI VA LA LOGICA DI GIOCO
 HERE GOES THE GAME LOGIC
@@ -13,5 +14,6 @@ func _process(delta: float) -> void:
 		$HUD/Control/ShotTimer.start()
 	else:
 		Events.shot = false
+    
 func _physics_process(delta: float) -> void:
 	pass

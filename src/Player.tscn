@@ -1,25 +1,25 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=3]
-[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=4]
-
-[sub_resource type="Curve2D" id=1]
-_data = {
-"points": PoolVector2Array(  )
-}
+[ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=3]
+[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=4]
+[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=5]
+[ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=6]
 
 [node name="Player" type="Node2D"]
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
+
+[node name="Laser" type="Line2D" parent="."]
+texture = ExtResource( 3 )
 
 [node name="Body" type="Node2D" parent="."]
 editor/display_folded = true
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="Cannon" type="Node2D" parent="."]
 
@@ -29,7 +29,7 @@ position = Vector2( 0, -90 )
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
 position = Vector2( 0, -19 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 offset = Vector2( 0, -40 )
 flip_v = true
 

@@ -29,8 +29,15 @@ func _process(delta):
 	if Events.shot == true:
 		_on_Shot_pressed()
 
+
 func _on_Tween_all_completed() -> void:
-    pass #Stop the FX sounds
+	$Laser.add_point($Cannon.position)
+	$Laser.add_point(get_global_mouse_position())
+	pass #Stop the FX sounds
 
 func _on_Tween_started(object: Object, key: NodePath) -> void:
-    pass #Start the FX sounds
+	pass #Start the FX sounds
+
+func _play_shot_sound() -> void:
+	$Cannon/CannonShot.pitch_scale = rand_range(0.8, 1.2)
+	$Cannon/CannonShot.play()
