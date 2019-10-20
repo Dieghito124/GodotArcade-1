@@ -15,7 +15,6 @@ bullet_scene = ExtResource( 2 )
 texture = ExtResource( 3 )
 
 [node name="Body" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
@@ -33,15 +32,8 @@ texture = ExtResource( 5 )
 offset = Vector2( 0, -40 )
 flip_v = true
 
-[node name="BulletPath" type="Path2D" parent="."]
-editor/display_folded = true
-position = Vector2( 1.08075, 11.3476 )
-curve = SubResource( 1 )
-
-[node name="PathFollow2D" type="PathFollow2D" parent="BulletPath"]
-position = Vector2( -0.832169, 1.10956 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
+stream = ExtResource( 6 )
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
