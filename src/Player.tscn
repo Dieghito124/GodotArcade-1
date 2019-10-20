@@ -18,6 +18,7 @@ texture = ExtResource( 3 )
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
+z_index = 1
 texture = ExtResource( 4 )
 
 [node name="Cannon" type="Node2D" parent="."]
@@ -28,6 +29,7 @@ position = Vector2( 0, -90 )
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
 position = Vector2( 0, -19 )
 scale = Vector2( 0.5, 0.5 )
+z_index = 1
 texture = ExtResource( 5 )
 offset = Vector2( 0, -40 )
 flip_v = true
