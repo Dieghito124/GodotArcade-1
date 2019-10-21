@@ -18,9 +18,18 @@ func _input(event: InputEvent) -> void:
 func _draw() -> void:
 	pass
 
+func _process(delta) -> void:
+	Events.ang = $Cannon.rotation
+	if Events.shot == true:
+		_player_shot()
+
 func _player_shot() -> void:
-	bullet_spawn_pos = $Cannon/BulletSpawnPos.global_position
-	Events.emit_signal("player_shot", bullet_spawn_pos)
+	#bullet_spawn_pos = $Cannon/BulletSpawnPos.global_position
+	#Events.emit_signal("player_shot", bullet_spawn_pos)
+	var sc_bul = load("res://src/Bullet.tscn")
+	var bul = sc_bul.instance()
+	get_node("/root/Game/World1").add_child(bul)
+	bul.position = self.position
 	_play_shot_sound()
 
 func _on_Tween_all_completed() -> void:
@@ -32,5 +41,5 @@ func _on_Tween_started(object: Object, key: NodePath) -> void:
 	pass #Start the FX sounds
 
 func _play_shot_sound() -> void:
-	$Cannon/CannonShot.pitch_scale = rand_range(0.8, 1.2)
 	$Cannon/CannonShot.play()
+	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.1)
