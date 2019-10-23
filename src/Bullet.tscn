@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/Bullet.gd" type="Script" id=1]
 [ext_resource path="res://assets/Tank/Tank_Bullet.png" type="Texture" id=2]
@@ -6,11 +6,16 @@
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 1.0
 
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 15.6484
-height = 10.7302
+[sub_resource type="CircleShape2D" id=2]
+radius = 15.7344
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 15.5524
+height = 10.2026
 
 [node name="Bullet" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 7
 physics_material_override = SubResource( 1 )
 gravity_scale = 0.0
 contacts_reported = 1
@@ -22,4 +27,12 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -6.01291 )
 shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 7
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
