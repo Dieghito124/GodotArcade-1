@@ -3,6 +3,8 @@ extends Node2D
 export var bullet_scene : PackedScene
 var bullet_spawn_pos : Vector2
 
+var tur_mov = false
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
@@ -35,11 +37,19 @@ func _player_shot() -> void:
 func _on_Tween_all_completed() -> void:
 	$Laser.add_point($Cannon.position)
 	$Laser.add_point(get_global_mouse_position())
+	_stop_turret_sound()
 	pass #Stop the FX sounds
 
 func _on_Tween_started(object: Object, key: NodePath) -> void:
+	_play_turret_sound()
 	pass #Start the FX sounds
 
 func _play_shot_sound() -> void:
 	$Cannon/CannonShot.play()
 	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.1)
+
+func _play_turret_sound() -> void:
+	$Cannon/TurretMove.play()
+
+func _stop_turret_sound() -> void:
+	$Cannon/TurretMove.stop()

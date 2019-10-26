@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=4]
 [ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=5]
 [ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=6]
+[ext_resource path="res://sound/SFX/TankTurretMoving.wav" type="AudioStream" id=7]
 
 [node name="Player" type="Node2D"]
 script = ExtResource( 1 )
@@ -36,6 +37,10 @@ flip_v = true
 
 [node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
 stream = ExtResource( 6 )
+
+[node name="TurretMove" type="AudioStreamPlayer" parent="Cannon"]
+stream = ExtResource( 7 )
+volume_db = -10.0
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
