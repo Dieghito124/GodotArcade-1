@@ -26,9 +26,11 @@ func _player_shot() -> void:
 	_play_shot_sound()
 
 func _on_Tween_all_completed() -> void:
+	$Laser.clear_points()
 	$Laser.add_point($Cannon.position)
 	$Laser.add_point(get_global_mouse_position())
 
 func _play_shot_sound() -> void:
 	$Cannon/CannonShot.play()
 	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
+	$Cannon/CannonShot.volume_db = rand_range(-2, 2)

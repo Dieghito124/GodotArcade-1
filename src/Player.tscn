@@ -13,6 +13,7 @@ bullet_scene = ExtResource( 2 )
 
 [node name="Laser" type="Line2D" parent="."]
 texture = ExtResource( 3 )
+texture_mode = 99
 
 [node name="Body" type="Node2D" parent="."]
 
