@@ -2,11 +2,20 @@
 
 importer="wav"
 type="AudioStreamSample"
+<<<<<<< HEAD
 valid=false
+=======
+path="res://.import/TankTurretMoving.wav-45baef78ec2a464f1a88e4fdf3257ab7.sample"
+>>>>>>> 649a982a1ceb9c1f9fc08f3657a340df9204013d
 
 [deps]
 
 source_file="res://sound/SFX/TankTurretMoving.wav"
+<<<<<<< HEAD
+=======
+dest_files=[ "res://.import/TankTurretMoving.wav-45baef78ec2a464f1a88e4fdf3257ab7.sample" ]
+
+>>>>>>> 649a982a1ceb9c1f9fc08f3657a340df9204013d
 [params]
 
 force/8_bit=false

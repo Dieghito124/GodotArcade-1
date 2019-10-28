@@ -5,6 +5,8 @@ export var bullet_scene : PackedScene
 func _ready() -> void:
 	Events.connect("player_shot", $".", "_player_shot")
 
+var tur_mov = false
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
@@ -30,7 +32,18 @@ func _on_Tween_all_completed() -> void:
 	$Laser.add_point($Cannon.position)
 	$Laser.add_point(get_global_mouse_position())
 
+func _on_Tween_started(object: Object, key: NodePath) -> void:
+	_play_turret_sound()
+	pass #Start the FX sounds
+
 func _play_shot_sound() -> void:
 	$Cannon/CannonShot.play()
 	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 	$Cannon/CannonShot.volume_db = rand_range(-2, 2)
+	_stop_turret_sound()
+
+func _play_turret_sound() -> void:
+	$Cannon/TurretMove.play()
+
+func _stop_turret_sound() -> void:
+	$Cannon/TurretMove.stop()

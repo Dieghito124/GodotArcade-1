@@ -13,7 +13,6 @@ bullet_scene = ExtResource( 2 )
 
 [node name="Laser" type="Line2D" parent="."]
 texture = ExtResource( 3 )
-texture_mode = 99
 
 [node name="Body" type="Node2D" parent="."]
 
@@ -34,6 +33,9 @@ flip_v = true
 
 [node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
 stream = ExtResource( 6 )
+
+[node name="TurretMove" type="AudioStreamPlayer" parent="Cannon"]
+volume_db = -10.0
 
 [node name="Tween" type="Tween" parent="."]
 
