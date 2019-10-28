@@ -14,6 +14,7 @@ position = Vector2( 510, 600 )
 [node name="Bullets" type="Node" parent="."]
 
 [node name="Obstacles" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="StaticBody2D" parent="Obstacles" instance=ExtResource( 2 )]
 position = Vector2( 893.849, 209.12 )
@@ -25,13 +26,13 @@ position = Vector2( 677.327, 135.095 )
 position = Vector2( 460.525, 100.79 )
 
 [node name="StaticBody2D4" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 116, 236 )
+position = Vector2( 116, 235 )
 
 [node name="StaticBody2D5" parent="Obstacles" instance=ExtResource( 2 )]
 position = Vector2( 116, 171 )
 
 [node name="StaticBody2D6" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 116, 106 )
+position = Vector2( 116, 107 )
 
 [node name="StaticBody2D7" parent="Obstacles" instance=ExtResource( 2 )]
-position = Vector2( 116, 41 )
+position = Vector2( 116, 43 )
