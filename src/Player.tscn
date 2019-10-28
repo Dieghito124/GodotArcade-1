@@ -14,9 +14,9 @@ script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
 
 [node name="Laser" type="Line2D" parent="."]
+points = PoolVector2Array( 1183, -474, 0, 0 )
 texture = ExtResource( 3 )
-texture_mode = 105474240
-round_precision = 2
+round_precision = 32
 script = ExtResource( 4 )
 
 [node name="Body" type="Node2D" parent="."]
