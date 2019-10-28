@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=3]
-[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=4]
-[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=5]
-[ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=6]
-[ext_resource path="res://sound/SFX/turret_rotation.ogg" type="AudioStream" id=7]
+[ext_resource path="res://src/Laser.gd" type="Script" id=4]
+[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=5]
+[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=6]
+[ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=7]
+[ext_resource path="res://sound/SFX/turret_rotation.ogg" type="AudioStream" id=8]
 
 [node name="Player" type="Node2D"]
 script = ExtResource( 1 )
@@ -15,13 +16,15 @@ bullet_scene = ExtResource( 2 )
 [node name="Laser" type="Line2D" parent="."]
 texture = ExtResource( 3 )
 texture_mode = 105474240
+round_precision = 2
+script = ExtResource( 4 )
 
 [node name="Body" type="Node2D" parent="."]
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="Cannon" type="Node2D" parent="."]
 
@@ -29,15 +32,15 @@ texture = ExtResource( 4 )
 position = Vector2( 0, -19 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 offset = Vector2( 0, -40 )
 flip_v = true
 
 [node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
-stream = ExtResource( 6 )
+stream = ExtResource( 7 )
 
 [node name="TurretMove" type="AudioStreamPlayer" parent="Cannon"]
-stream = ExtResource( 7 )
+stream = ExtResource( 8 )
 volume_db = -5.0
 pitch_scale = 0.7
 

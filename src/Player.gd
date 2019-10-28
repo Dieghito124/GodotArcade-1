@@ -28,16 +28,13 @@ func _player_shot() -> void:
 		Events.emit_signal("bullet_spawned", $Cannon.rotation)
 		_play_shot_sound()
 
-func _on_Tween_all_completed() -> void:
-	"""LASER CURRENTLY NOT WORKING"""
-	$Laser.clear_points()
-	$Laser.add_point(get_global_mouse_position())
-	_stop_turret_sound()	
-
 func _on_Tween_started(object: Object, key: NodePath) -> void:
 	turret_moving = true
 	_play_turret_sound()
 	pass #Start the FX sounds
+
+func _on_Tween_all_completed() -> void:
+	_stop_turret_sound()	
 
 func _play_shot_sound() -> void:
 	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
@@ -56,11 +53,3 @@ func _stop_turret_sound() -> void:
 func _on_RotationDuration_timeout() -> void: #stops the sound after the final "click"
 	$Cannon/TurretMove.stop()
 	turret_moving = false	
-
-func _process(delta: float) -> void:
-	pass
-	
-func _physics_process(delta: float) -> void:
-	pass
-
-
