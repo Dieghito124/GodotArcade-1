@@ -1,6 +1,6 @@
 extends Node2D
 
-signal bullet_instanciated
+signal bullet_instanciated(position, rotation)
 
 export var bullet_scene : PackedScene
 export var bullet_velocity : Vector2
@@ -30,8 +30,7 @@ func _player_shot() -> void:
 		$Timers/ShotTimer.start()
 		var bul = bullet_scene.instance()
 		get_node("/root/Game/World1/Bullets").add_child(bul)
-		bul.position = self.position
-		emit_signal("bullet_instanciated")
+		emit_signal("bullet_instanciated", position, rotation)
 #------------START THE SOUND OF THE CANNON ROTATION------------#
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
