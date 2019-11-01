@@ -12,37 +12,9 @@ anchor_bottom = 1.0
 margin_left = -1.36041
 margin_right = -1.36041
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-[node name="BtnShot" type="Button" parent="Control"]
-margin_left = 810.791
-margin_top = 393.495
-margin_right = 947.791
-margin_bottom = 524.495
-focus_mode = 0
-button_mask = 2
-enabled_focus_mode = 0
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
->>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 [node name="MoveBtn" type="Button" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -10.0
-margin_top = -8.0
-margin_right = 8.0
-margin_bottom = 9.0
 flat = true
 
 [node name="ShotBtn" type="Button" parent="Control"]
@@ -50,21 +22,6 @@ margin_left = 815.0
 margin_top = 435.0
 margin_right = 938.0
 margin_bottom = 509.0
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> master
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
-
->>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 icon = ExtResource( 2 )
 flat = true
