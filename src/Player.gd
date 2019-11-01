@@ -1,14 +1,18 @@
 extends Node2D
 
+signal bullet_instanciated
+
 export var bullet_scene : PackedScene
+export var bullet_velocity : Vector2
 
 func _ready() -> void:
-	Events.connect("player_shot", $".", "_player_shot")
+	pass
 
 var turret_moving : bool = false
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventScreenTouch && !turret_moving: #it allows you to rotate only if the turret has completed the previous rotation
+	if event is InputEventScreenTouch && !turret_moving:
+#------------ALLOWS TO ROTATE ONLY IF THE PREVIOUS ROTATION IS FINISHED------------#		
 		var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
 		if angle > PI:
 			if get_global_mouse_position().x < get_viewport_rect().size.x / 2: 
@@ -19,37 +23,33 @@ func _input(event: InputEvent) -> void:
 			$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 		$Tween.start()
 
+
 func _player_shot() -> void:
-	if !turret_moving: #shot only if the turret is not moving
+	if !turret_moving:
+#------------INSTANCIATE THE BULLET WHEN THE BUTTON IS PRESSED & TURRET NOT MOVING------------#	
 		$Timers/ShotTimer.start()
 		var bul = bullet_scene.instance()
 		get_node("/root/Game/World1/Bullets").add_child(bul)
 		bul.position = self.position
-		Events.emit_signal("bullet_spawned", $Cannon.rotation)
-		_play_shot_sound()
+		emit_signal("bullet_instanciated")
+#------------START THE SOUND OF THE CANNON ROTATION------------#
+		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
+		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
+		$Cannon/CannonShot.play()
 
 func _on_Tween_started(object: Object, key: NodePath) -> void:
 	turret_moving = true
-	_play_turret_sound()
-	pass #Start the FX sounds
-
-func _on_Tween_all_completed() -> void:
-	_stop_turret_sound()	
-
-func _play_shot_sound() -> void:
-	$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
-	$Cannon/CannonShot.volume_db = rand_range(-2, 2)
-	$Cannon/CannonShot.play()
-
-func _play_turret_sound() -> void: #there could be some problems with large rotations
+#------------START THE SOUND OF THE CANNON SHOT------------#	
 	$Cannon/TurretMove.pitch_scale = rand_range(0.7, 0.8)
 	$Cannon/TurretMove.volume_db = rand_range(-7, -3)
 	$Cannon/TurretMove.play()
 
-func _stop_turret_sound() -> void:
+func _on_Tween_all_completed() -> void:
+#------------STOP THE SOUND OF THE CANNON ROTATION------------#
 	$Cannon/TurretMove.play(2.90)
 	$Cannon/TurretMove/RotationDuration.start()
 
-func _on_RotationDuration_timeout() -> void: #stops the sound after the final "click"
+func _on_RotationDuration_timeout() -> void:
+#------------STOP THE SOUND OF THE CANNON ROTATION AFTER THE FINAL "CLICK"------------#
 	$Cannon/TurretMove.stop()
 	turret_moving = false	

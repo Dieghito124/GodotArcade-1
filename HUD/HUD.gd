@@ -1,7 +1,6 @@
 extends CanvasLayer
 
+signal shot
+
 func _ready() -> void:
-	pass
-	
-func _on_ShotBtn_pressed() -> void:
-	Events.emit_signal("player_shot")
+	$Control/BtnShot.connect("pressed", get_node("/root/Game/Player"), "_player_shot")
