@@ -18,6 +18,26 @@ bullet_velocity = Vector2( 0, -800 )
 points = PoolVector2Array( 1208.76, -362.631, 0, 0 )
 default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
 texture = ExtResource( 3 )
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+texture_mode = -1085237757
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+texture_mode = -1085237757
+=======
+<<<<<<< HEAD
+=======
+
+texture_mode = 1
+
+>>>>>>> master
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 round_precision = 32
 script = ExtResource( 4 )
 

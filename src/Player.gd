@@ -22,15 +22,67 @@ func _input(event: InputEvent) -> void:
 		$Tween.interpolate_property($Cannon, "rotation", $Cannon.rotation,
 			$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 		$Tween.start()
+<<<<<<< Updated upstream
 """
+=======
+<<<<<<< Updated upstream
+
+
+=======
+<<<<<<< Updated upstream
+"""
+=======
+<<<<<<< Updated upstream
+
+
+=======
+<<<<<<< HEAD
+"""
+=======
+
+>>>>>>> master
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 func _player_shot() -> void:
 	if !turret_moving and $Timers/ShotTimer.time_left == 0:
 #------------INSTANCIATE THE BULLET WHEN THE BUTTON IS PRESSED & TURRET NOT MOVING------------#	
 		$Timers/ShotTimer.start()
 		var bul = bullet_scene.instance()
+<<<<<<< Updated upstream
 		get_node("/root/Game/Player").add_child(bul)
 		connect("bullet_instanciated", bul, "initialize")
 		emit_signal("bullet_instanciated", $Cannon.position, $Cannon.rotation)
+=======
+<<<<<<< Updated upstream
+		get_node("/root/Game").add_child(bul)
+		bul.position = self.position
+		emit_signal("bullet_instanciated")
+=======
+<<<<<<< Updated upstream
+		get_node("/root/Game/Player").add_child(bul)
+		connect("bullet_instanciated", bul, "initialize")
+		emit_signal("bullet_instanciated", $Cannon.position, $Cannon.rotation)
+=======
+<<<<<<< Updated upstream
+		get_node("/root/Game").add_child(bul)
+		bul.position = self.position
+		emit_signal("bullet_instanciated")
+=======
+<<<<<<< HEAD
+		get_node("/root/Game/Player").add_child(bul)
+		connect("bullet_instanciated", bul, "initialize")
+		emit_signal("bullet_instanciated", $Cannon.position, $Cannon.rotation)
+=======
+		get_node("/root/Game/World1/Bullets").add_child(bul)
+		emit_signal("bullet_instanciated", position, rotation)
+		connect("bullet_instanciated", bul, "initialize")
+>>>>>>> master
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 #------------START THE SOUND OF THE CANNON ROTATION------------#
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
@@ -64,4 +116,21 @@ func _on_Tween_all_completed() -> void:
 func _on_RotationDuration_timeout() -> void:
 	turret_moving = false
 #------------STOP THE SOUND OF THE CANNON ROTATION AFTER THE FINAL "CLICK"------------#
+<<<<<<< Updated upstream
 	$Cannon/TurretMove.stop()
+=======
+<<<<<<< Updated upstream
+	$Cannon/TurretMove.stop()
+	turret_moving = false	
+=======
+<<<<<<< Updated upstream
+	$Cannon/TurretMove.stop()
+=======
+	$Cannon/TurretMove.stop()
+<<<<<<< Updated upstream
+	turret_moving = false	
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
