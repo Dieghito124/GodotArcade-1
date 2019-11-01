@@ -23,7 +23,6 @@ func _input(event: InputEvent) -> void:
 			$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 		$Tween.start()
 
-
 func _player_shot() -> void:
 	if !turret_moving:
 #------------INSTANCIATE THE BULLET WHEN THE BUTTON IS PRESSED & TURRET NOT MOVING------------#	
@@ -35,6 +34,9 @@ func _player_shot() -> void:
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
 		$Cannon/CannonShot.play()
+
+func _player_move() -> void:
+	pass
 
 func _on_Tween_started(object: Object, key: NodePath) -> void:
 	turret_moving = true
@@ -49,6 +51,6 @@ func _on_Tween_all_completed() -> void:
 	$Cannon/TurretMove/RotationDuration.start()
 
 func _on_RotationDuration_timeout() -> void:
+	turret_moving = false
 #------------STOP THE SOUND OF THE CANNON ROTATION AFTER THE FINAL "CLICK"------------#
 	$Cannon/TurretMove.stop()
-	turret_moving = false	
