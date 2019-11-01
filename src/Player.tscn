@@ -12,16 +12,18 @@
 [node name="Player" type="Node2D"]
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
+bullet_velocity = Vector2( 0, -800 )
 
 [node name="Laser" type="Line2D" parent="."]
 points = PoolVector2Array( 1208.76, -362.631, 0, 0 )
 default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
 texture = ExtResource( 3 )
-texture_mode = 1066401792
+texture_mode = -1085237757
 round_precision = 32
 script = ExtResource( 4 )
 
 [node name="Body" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
@@ -29,6 +31,7 @@ z_index = 1
 texture = ExtResource( 5 )
 
 [node name="Cannon" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
 position = Vector2( 0, -19 )
@@ -42,6 +45,7 @@ flip_v = true
 stream = ExtResource( 7 )
 
 [node name="TurretMove" type="AudioStreamPlayer" parent="Cannon"]
+editor/display_folded = true
 stream = ExtResource( 8 )
 volume_db = -5.0
 pitch_scale = 0.7
@@ -53,6 +57,7 @@ one_shot = true
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Timers" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="ShotTimer" type="Timer" parent="Timers"]
 wait_time = 3.0

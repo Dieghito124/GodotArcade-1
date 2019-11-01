@@ -8,6 +8,9 @@ func _ready() -> void:
 	#$Arcade1.play()
 	pass
 
+func _shot_pressed() -> void:
+	emit_signal("player_shot")
+
 func _process(delta: float) -> void:
 	if not $Arcade1.playing and not $"Arcade1(part2)".playing:
 		#$"Arcade1(part2)".play()

@@ -1,10 +1,6 @@
 extends CanvasLayer
 
-func _ready() -> void:
-	pass
-	
-func _on_ShotBtn_pressed() -> void:
-	Events.emit_signal("player_shot")
+signal shot
 
-func _on_MoveBtn_pressed():
-	Events.emit_signal("turret_move")
+func _ready() -> void:
+	$Control/BtnShot.connect("pressed", get_node("/root/Game/Player"), "_player_shot")
