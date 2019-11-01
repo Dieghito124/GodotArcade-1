@@ -2,13 +2,28 @@ extends Node2D
 
 export var bullet_scene : PackedScene
 
+signal turret_move_laser
+
 func _ready() -> void:
 	Events.connect("player_shot", $".", "_player_shot")
+	Events.connect("turret_move", $".", "_turret_move")
 
 var turret_moving : bool = false
 
-func _input(event: InputEvent) -> void:
-	if event is InputEventScreenTouch && !turret_moving: #it allows you to rotate only if the turret has completed the previous rotation
+#func _input(event: InputEvent) -> void:
+	#if event is InputEventScreenTouch && !turret_moving: #it allows you to rotate only if the turret has completed the previous rotation
+		#var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
+		#if angle > PI:
+			#if get_global_mouse_position().x < get_viewport_rect().size.x / 2: 
+				#angle = $Cannon.get_angle_to(get_global_mouse_position()) - 3*PI/2
+			#if get_global_mouse_position().x > get_viewport_rect().size.x / 2: 
+				#angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
+		#$Tween.interpolate_property($Cannon, "rotation", $Cannon.rotation,
+			#$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
+		#$Tween.start()
+
+func _turret_move() -> void:
+	if !turret_moving: #it allows you to rotate only if the turret has completed the previous rotation
 		var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
 		if angle > PI:
 			if get_global_mouse_position().x < get_viewport_rect().size.x / 2: 
@@ -18,7 +33,7 @@ func _input(event: InputEvent) -> void:
 		$Tween.interpolate_property($Cannon, "rotation", $Cannon.rotation,
 			$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 		$Tween.start()
-
+		emit_signal("turret_move_laser")
 func _player_shot() -> void:
 	if !turret_moving: #shot only if the turret is not moving
 		$Timers/ShotTimer.start()
