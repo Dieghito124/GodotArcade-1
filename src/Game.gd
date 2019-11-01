@@ -1,8 +1,13 @@
 extends Node
-"""
-QUA CI VA LA LOGICA DI GIOCO
-HERE GOES THE GAME LOGIC
-"""
+
+"""GAME LOGIC"""
+
+signal load_game
+signal load_menu
+signal unload_game
+signal unload_menu
+signal player_shot
+signal bullet_spawned(cannon_rotation)
 
 func _ready() -> void:
 	#$Arcade1.play()

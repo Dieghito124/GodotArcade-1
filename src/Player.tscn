@@ -18,7 +18,9 @@ bullet_velocity = Vector2( 0, -800 )
 points = PoolVector2Array( 1208.76, -362.631, 0, 0 )
 default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
 texture = ExtResource( 3 )
-texture_mode = -1085237757
+
+texture_mode = 1
+
 round_precision = 32
 script = ExtResource( 4 )
 
@@ -62,7 +64,6 @@ editor/display_folded = true
 [node name="ShotTimer" type="Timer" parent="Timers"]
 wait_time = 3.0
 one_shot = true
-[connection signal="turret_move_laser" from="." to="Laser" method="_on_Player_turret_move_laser"]
 [connection signal="timeout" from="Cannon/TurretMove/RotationDuration" to="." method="_on_RotationDuration_timeout"]
 [connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
 [connection signal="tween_started" from="Tween" to="." method="_on_Tween_started"]
