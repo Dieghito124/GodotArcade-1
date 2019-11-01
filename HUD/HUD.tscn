@@ -22,6 +22,6 @@ margin_left = 815.0
 margin_top = 435.0
 margin_right = 938.0
 margin_bottom = 509.0
-button_mask = 2
+
 icon = ExtResource( 2 )
 flat = true
