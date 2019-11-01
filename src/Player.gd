@@ -5,10 +5,10 @@ signal bullet_instanciated(position, rotation)
 export var bullet_scene : PackedScene
 export var bullet_velocity : Vector2
 
+var turret_moving : bool = false
+
 func _ready() -> void:
 	pass
-
-var turret_moving : bool = false
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch && !turret_moving:
@@ -30,6 +30,7 @@ func _player_shot() -> void:
 		var bul = bullet_scene.instance()
 		get_node("/root/Game/World1/Bullets").add_child(bul)
 		emit_signal("bullet_instanciated", position, rotation)
+		connect("bullet_instanciated", bul, "initialize")
 #------------START THE SOUND OF THE CANNON ROTATION------------#
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
