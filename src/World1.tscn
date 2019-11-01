@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [gd_scene load_steps=2 format=2]
 =======
@@ -22,6 +23,11 @@
 >>>>>>> Stashed changes
 
 >>>>>>> master
+=======
+
+[gd_scene load_steps=2 format=2]
+
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 [ext_resource path="res://src/Obstacle.tscn" type="PackedScene" id=1]
 
 [node name="World1" type="Node2D"]
@@ -35,6 +41,7 @@ __meta__ = {
 editor/display_folded = true
 
 [node name="StaticBody2D" parent="Obstacles" instance=ExtResource( 1 )]
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 position = Vector2( 893.849, 209.12 )
 =======
@@ -61,6 +68,10 @@ position = Vector2( 893.849, 209.12 )
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+
+position = Vector2( 893.849, 209.12 )
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 
 [node name="StaticBody2D2" parent="Obstacles" instance=ExtResource( 1 )]
 position = Vector2( 677.327, 135.095 )
@@ -78,6 +89,7 @@ position = Vector2( 116, 171 )
 position = Vector2( 116, 107 )
 
 [node name="StaticBody2D7" parent="Obstacles" instance=ExtResource( 1 )]
+<<<<<<< HEAD
 <<<<<<< HEAD
 position = Vector2( 116, 43 )
 =======
@@ -121,3 +133,6 @@ shape = SubResource( 3 )
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+position = Vector2( 116, 43 )
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0

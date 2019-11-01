@@ -12,6 +12,7 @@ anchor_bottom = 1.0
 margin_left = -1.36041
 margin_right = -1.36041
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
@@ -33,6 +34,8 @@ enabled_focus_mode = 0
 =======
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 [node name="MoveBtn" type="Button" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -47,6 +50,7 @@ margin_left = 815.0
 margin_top = 435.0
 margin_right = 938.0
 margin_bottom = 509.0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< Updated upstream
@@ -59,5 +63,8 @@ margin_bottom = 509.0
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
 icon = ExtResource( 2 )
 flat = true

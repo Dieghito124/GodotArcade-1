@@ -34,8 +34,11 @@ func initialize(pos, rot) -> void:
 =======
 	self.position = pos
 	self.apply_central_impulse(velocity.rotated(rot))
+<<<<<<< HEAD
 >>>>>>> master
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+>>>>>>> 087182df919af9500c3241a7cc88c895e813e4e0
