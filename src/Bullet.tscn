@@ -12,7 +12,7 @@ radius = 17.0488
 
 [node name="Bullet" type="RigidBody2D"]
 collision_layer = 8
-collision_mask = 7
+collision_mask = 31
 physics_material_override = SubResource( 1 )
 gravity_scale = 0.0
 script = ExtResource( 1 )
