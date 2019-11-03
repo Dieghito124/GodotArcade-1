@@ -9,20 +9,7 @@ var turret_moving : bool = false
 
 func _ready() -> void:
 	pass
-"""
-func _input(event: InputEvent) -> void:
-	if event is InputEventScreenTouch && !turret_moving:
-#------------ALLOWS TO ROTATE ONLY IF THE PREVIOUS ROTATION IS FINISHED------------#		
-		var angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
-		if angle > PI:
-			if get_global_mouse_position().x < get_viewport_rect().size.x / 2: 
-				angle = $Cannon.get_angle_to(get_global_mouse_position()) - 3*PI/2
-			if get_global_mouse_position().x > get_viewport_rect().size.x / 2: 
-				angle = $Cannon.get_angle_to(get_global_mouse_position()) + PI/2
-		$Tween.interpolate_property($Cannon, "rotation", $Cannon.rotation,
-			$Cannon.rotation + angle, 2, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
-		$Tween.start()
-"""
+
 func _player_shot() -> void:
 	if !turret_moving:
 #------------INSTANCIATE THE BULLET WHEN THE BUTTON IS PRESSED & TURRET NOT MOVING------------#	
@@ -31,6 +18,7 @@ func _player_shot() -> void:
 		get_node("/root/Game/Player").add_child(bul)
 		connect("bullet_instanciated", bul, "initialize")
 		emit_signal("bullet_instanciated", $Cannon.position, $Cannon.rotation)
+		disconnect("bullet_instanciated", bul, "initialize")
 #------------START THE SOUND OF THE CANNON ROTATION------------#
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)
 		$Cannon/CannonShot.volume_db = rand_range(-2, 2)
