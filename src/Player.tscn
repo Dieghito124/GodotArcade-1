@@ -2,43 +2,46 @@
 
 [ext_resource path="res://src/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=3]
-[ext_resource path="res://src/Laser.gd" type="Script" id=4]
-[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=5]
-[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=6]
+[ext_resource path="res://assets/Tank/tank_body_test.png" type="Texture" id=3]
+[ext_resource path="res://src/Cannon.gd" type="Script" id=4]
+[ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=5]
+[ext_resource path="res://assets/Tank/tank_cannon_test.png" type="Texture" id=6]
 [ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=7]
 [ext_resource path="res://sound/SFX/turret_rotation.ogg" type="AudioStream" id=8]
 
 [node name="Player" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
 bullet_velocity = Vector2( 0, -800 )
 
-[node name="Laser" type="Line2D" parent="."]
-points = PoolVector2Array( 1208.76, -362.631, 0, 0 )
-default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
-texture = ExtResource( 3 )
-round_precision = 32
-script = ExtResource( 4 )
-
 [node name="Body" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 3 )
 
 [node name="Cannon" type="Node2D" parent="."]
-editor/display_folded = true
+script = ExtResource( 4 )
+
+[node name="ShotPos" type="Position2D" parent="Cannon"]
+position = Vector2( 0, -220 )
+
+[node name="Laser" type="Line2D" parent="Cannon"]
+points = PoolVector2Array( 0, -220, 0, -6000 )
+default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
+texture = ExtResource( 5 )
+texture_mode = -916354232
+round_precision = 32
+
+[node name="RayCast2D" type="RayCast2D" parent="Cannon/Laser"]
 
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
-position = Vector2( 0, -19 )
+position = Vector2( 0, -100 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
 texture = ExtResource( 6 )
-offset = Vector2( 0, -40 )
-flip_v = true
 
 [node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
 stream = ExtResource( 7 )

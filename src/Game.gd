@@ -12,6 +12,7 @@ signal bullet_spawned(cannon_rotation)
 var music = true
 
 func _ready() -> void:
+
 	#$Arcade1.play()
 	pass
 

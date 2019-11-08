@@ -17,7 +17,7 @@ func _player_shot() -> void:
 		var bul = bullet_scene.instance()
 		get_node("/root/Game/Player").add_child(bul)
 		connect("bullet_instanciated", bul, "initialize")
-		emit_signal("bullet_instanciated", $Cannon.position, $Cannon.rotation)
+		emit_signal("bullet_instanciated", $Cannon/ShotPos.global_position, $Cannon.rotation)
 		disconnect("bullet_instanciated", bul, "initialize")
 #------------START THE SOUND OF THE CANNON ROTATION------------#
 		$Cannon/CannonShot.pitch_scale = rand_range(0.9, 1.2)

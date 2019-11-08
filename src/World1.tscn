@@ -10,13 +10,11 @@ __meta__ = {
 }
 
 [node name="Areas" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="CollisionArea" parent="Areas" instance=ExtResource( 1 )]
 position = Vector2( 282.549, 107.479 )
 
 [node name="Obstacles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="StaticBody2D" parent="Obstacles" instance=ExtResource( 2 )]
 position = Vector2( 893.849, 209.12 )
@@ -40,7 +38,6 @@ position = Vector2( 116, 107 )
 position = Vector2( 116, 43 )
 
 [node name="Targets" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="GreenTarg" parent="Targets" instance=ExtResource( 3 )]
 position = Vector2( 339.917, 217.147 )
