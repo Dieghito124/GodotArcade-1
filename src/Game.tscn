@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/Game.gd" type="Script" id=1]
 [ext_resource path="res://src/World1.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://sound/music/CanzoneArcade1(SecondaParte).wav" type="AudioStream" id=4]
 [ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/menu/Menu.tscn" type="PackedScene" id=7]
 
 [node name="Game" type="Node"]
 script = ExtResource( 1 )
@@ -24,3 +25,6 @@ volume_db = -10.0
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 530, 600 )
+
+[node name="Menu" parent="." instance=ExtResource( 7 )]
+visible = false
