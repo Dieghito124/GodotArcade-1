@@ -16,7 +16,6 @@ bullet_scene = ExtResource( 2 )
 bullet_velocity = Vector2( 0, -800 )
 
 [node name="Body" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
@@ -36,8 +35,24 @@ enabled = true
 cast_to = Vector2( 0, -6000 )
 collide_with_areas = true
 
+
 [node name="Cannon" type="Node2D" parent="."]
-editor/display_folded = true
+
+[node name="ShotPos" type="Position2D" parent="Cannon"]
+position = Vector2( 0, -220 )
+
+[node name="Laser" type="Line2D" parent="Cannon"]
+points = PoolVector2Array( 0, 0 )
+default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
+texture = ExtResource( 4 )
+texture_mode = 0
+round_precision = 32
+
+[node name="RayCast2D" type="RayCast2D" parent="Cannon/Laser"]
+enabled = true
+cast_to = Vector2( 0, -6000 )
+collision_mask = 19
+collide_with_areas = true
 
 [node name="ShotPos" type="Position2D" parent="Cannon"]
 position = Vector2( 0, -220 )

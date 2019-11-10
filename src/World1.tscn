@@ -12,16 +12,21 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+
 position = Vector2( -1086.4, 32.8241 )
+
 
 [node name="Areas" type="Node" parent="."]
 
 [node name="CollisionArea" parent="Areas" instance=ExtResource( 2 )]
+
 position = Vector2( 264.524, 121.899 )
+
 
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="StaticBody2D" parent="Obstacles" instance=ExtResource( 3 )]
+
 position = Vector2( 875.824, 223.54 )
 
 [node name="StaticBody2D2" parent="Obstacles" instance=ExtResource( 3 )]
@@ -42,10 +47,13 @@ position = Vector2( 97.9749, 121.42 )
 [node name="StaticBody2D7" parent="Obstacles" instance=ExtResource( 3 )]
 position = Vector2( 97.9749, 57.4202 )
 
+
 [node name="Targets" type="Node" parent="."]
 
 [node name="GreenTarg" parent="Targets" instance=ExtResource( 4 )]
+
 position = Vector2( 321.892, 231.567 )
 
 [node name="GreenTarg2" parent="Targets" instance=ExtResource( 4 )]
 position = Vector2( 376.185, 339.047 )
+

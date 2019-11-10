@@ -8,13 +8,13 @@ export var bullet_velocity : Vector2
 var turret_moving : bool = false
 
 func _ready() -> void:
-	pass
-	
+
 func _process(delta: float) -> void:
 	print($Laser/RayCast2D.get_collision_point())
 	$Laser/RayCast2D.rotation = $Cannon.rotation
 	if $Laser/RayCast2D.get_collision_point():
 		$Laser.set_point_position(1, 2 * ($Laser/RayCast2D.get_collision_point() - self.position))
+
 
 func _player_shot() -> void:
 	if !turret_moving and $Timers/ShotTimer.time_left == 0:
