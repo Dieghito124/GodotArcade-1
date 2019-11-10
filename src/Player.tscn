@@ -2,24 +2,18 @@
 
 [ext_resource path="res://src/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Bullet.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=3]
-[ext_resource path="res://src/Laser.gd" type="Script" id=4]
-[ext_resource path="res://assets/Tank/Tank.png" type="Texture" id=5]
-[ext_resource path="res://assets/Tank/Tank_Barrel.png" type="Texture" id=6]
-[ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=7]
-[ext_resource path="res://sound/SFX/turret_rotation.ogg" type="AudioStream" id=8]
+[ext_resource path="res://assets/Tank/tank_body_test.png" type="Texture" id=3]
+[ext_resource path="res://assets/Tank/Laser.png" type="Texture" id=4]
+[ext_resource path="res://assets/Tank/tank_cannon_test.png" type="Texture" id=5]
+[ext_resource path="res://sound/SFX/TankShot1.wav" type="AudioStream" id=6]
+[ext_resource path="res://sound/SFX/turret_rotation.ogg" type="AudioStream" id=7]
+[ext_resource path="res://HUD/HUD.tscn" type="PackedScene" id=8]
 
 [node name="Player" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 bullet_scene = ExtResource( 2 )
 bullet_velocity = Vector2( 0, -800 )
-
-[node name="Laser" type="Line2D" parent="."]
-points = PoolVector2Array( 1208.76, -362.631, 0, 0 )
-default_color = Color( 0.482353, 0.482353, 0.482353, 1 )
-texture = ExtResource( 3 )
-round_precision = 32
-script = ExtResource( 4 )
 
 [node name="Body" type="Node2D" parent="."]
 editor/display_folded = true
@@ -27,25 +21,39 @@ editor/display_folded = true
 [node name="BodySprite" type="Sprite" parent="Body"]
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 3 )
+
+[node name="Laser" type="Line2D" parent="."]
+editor/display_folded = true
+points = PoolVector2Array( 0, 0, 0, -736 )
+width = 15.0
+default_color = Color( 1, 1, 1, 1 )
+texture = ExtResource( 4 )
+end_cap_mode = 2
+
+[node name="RayCast2D" type="RayCast2D" parent="Laser"]
+enabled = true
+cast_to = Vector2( 0, -6000 )
+collide_with_areas = true
 
 [node name="Cannon" type="Node2D" parent="."]
 editor/display_folded = true
 
+[node name="ShotPos" type="Position2D" parent="Cannon"]
+position = Vector2( 0, -220 )
+
 [node name="CannonSprite" type="Sprite" parent="Cannon"]
-position = Vector2( 0, -19 )
+position = Vector2( 0, -100 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1
-texture = ExtResource( 6 )
-offset = Vector2( 0, -40 )
-flip_v = true
+texture = ExtResource( 5 )
 
 [node name="CannonShot" type="AudioStreamPlayer" parent="Cannon"]
-stream = ExtResource( 7 )
+stream = ExtResource( 6 )
 
 [node name="TurretMove" type="AudioStreamPlayer" parent="Cannon"]
 editor/display_folded = true
-stream = ExtResource( 8 )
+stream = ExtResource( 7 )
 volume_db = -5.0
 pitch_scale = 0.7
 
@@ -56,11 +64,14 @@ one_shot = true
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Timers" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="ShotTimer" type="Timer" parent="Timers"]
-wait_time = 3.0
+wait_time = 1.5
 one_shot = true
+
+[node name="Bullets" type="Node" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource( 8 )]
 [connection signal="timeout" from="Cannon/TurretMove/RotationDuration" to="." method="_on_RotationDuration_timeout"]
 [connection signal="tween_all_completed" from="Tween" to="." method="_on_Tween_all_completed"]
 [connection signal="tween_started" from="Tween" to="." method="_on_Tween_started"]

@@ -12,9 +12,23 @@ anchor_bottom = 1.0
 margin_left = -1.36041
 margin_right = -1.36041
 
-[node name="MoveBtn" type="Button" parent="Control"]
+[node name="MoveButtons" type="HBoxContainer" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="MoveLeft" type="Button" parent="Control/MoveButtons"]
+margin_right = 510.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+flat = true
+
+[node name="MoveRight" type="Button" parent="Control/MoveButtons"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 flat = true
 
 [node name="ShotBtn" type="Button" parent="Control"]

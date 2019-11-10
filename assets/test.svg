@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="test.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="473.11861"
+     inkscape:cy="549.17781"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       ry="2.4828482"
+       y="133.20747"
+       x="100.96007"
+       height="34.449448"
+       width="24.991682"
+       id="rect857"
+       style="opacity:1;fill:#202e1e;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <rect
+       style="opacity:1;fill:#394e37;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect817"
+       width="23.657753"
+       height="34.449448"
+       x="101.62703"
+       y="133.20747"
+       ry="2.4828482"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <g
+       id="g835"
+       transform="matrix(0.32187808,0,0,0.32187808,76.976461,97.461376)"
+       style="fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450">
+      <rect
+         ry="0"
+         y="122.74027"
+         x="96.217033"
+         height="16.30344"
+         width="34.477768"
+         id="rect819"
+         style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect821"
+         width="34.477768"
+         height="16.30344"
+         x="96.217033"
+         y="196.77393"
+         ry="0" />
+    </g>
+    <g
+       id="g831"
+       transform="matrix(0.32187808,0,0,0.32187808,76.936937,97.461377)"
+       style="fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450">
+      <rect
+         transform="rotate(90)"
+         ry="0"
+         y="-96.595016"
+         x="139.14165"
+         height="16.30344"
+         width="57.534317"
+         id="rect825"
+         style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.82199861;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect827"
+         width="57.534317"
+         height="16.30344"
+         x="139.14165"
+         y="-146.86584"
+         ry="0"
+         transform="rotate(90)" />
+    </g>
+    <rect
+       style="opacity:1;fill:#334531;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815"
+       width="18.58209"
+       height="26.324631"
+       x="104.16486"
+       y="138.34523"
+       ry="3.6992128"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <path
+       style="opacity:1;fill:#2d402b;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 112.63802,122.71197 c -0.002,0 -0.004,0.002 -0.004,0.004 v 9.37175 h -0.85258 c -0.003,0 -0.006,0.003 -0.006,0.006 v 20.0971 c 0,0.003 0.002,0.005 0.006,0.005 h 3.34894 c 0.003,0 0.006,-0.002 0.006,-0.005 V 132.0933 c 0,-0.003 -0.002,-0.006 -0.006,-0.006 h -0.85258 v -9.37174 c 0,-0.002 -0.002,-0.004 -0.004,-0.004 z"
+       id="rect875"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_cannon_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path877"
+       cx="122.55339"
+       cy="136.43111"
+       r="1.1828878"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       r="1.1828878"
+       cy="136.43111"
+       cx="104.44445"
+       id="circle879"
+       style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path831"
+       cx="104.44445"
+       cy="136.43111"
+       r="0.36498675"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       r="0.36498675"
+       cy="136.43111"
+       cx="122.55339"
+       id="circle835"
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#2d402b;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path839"
+       cx="113.45591"
+       cy="148.38902"
+       r="5.6348476"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_cannon_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       r="3.9698796"
+       cy="148.38902"
+       cx="113.45591"
+       id="circle843"
+       style="opacity:1;fill:#283c26;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_cannon_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <rect
+       style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect845"
+       width="12.517102"
+       height="4.1723676"
+       x="107.19736"
+       y="156.97034"
+       ry="0"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path847"
+       cx="118.56921"
+       cy="157.77147"
+       r="0.34948954"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       r="0.34948954"
+       cy="160.4276"
+       cx="118.56921"
+       id="circle851"
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       r="0.34948954"
+       cy="157.77147"
+       cx="108.24583"
+       id="circle853"
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#202020;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle855"
+       cx="108.24583"
+       cy="160.4276"
+       r="0.34948954"
+       inkscape:export-filename="/home/marco/GodotEngine/GodotArcade/assets/Tank/tank_body_test.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
+    <circle
+       style="opacity:1;fill:#464133;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path859"
+       cx="113.51165"
+       cy="120.50285"
+       r="0.71476573" />
+    <rect
+       style="opacity:1;fill:#373737;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863"
+       width="27.936144"
+       height="33.184258"
+       x="138.70599"
+       y="132.35857"
+       ry="2.5428548"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="opacity:0.98000004;fill:#272727;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 143.62549,132.47829 -0.84181,0.58085 -3.68814,2.54609 -0.38654,-0.26665 v 1.16272 l 0.38654,0.26665 0.84129,-0.58136 3.68866,-2.54609 4.53047,3.12745 0.8413,-0.58136 3.68866,-2.54609 4.53047,3.12745 0.8413,-0.58136 3.68866,-2.54609 3.68866,2.54609 0.84181,0.58136 0.36225,-0.25011 v -1.16272 l -0.36276,0.25011 -3.68763,-2.54558 -0.84233,-0.58136 -0.84129,0.58085 -3.68867,2.54609 -3.68814,-2.54558 -0.84233,-0.58136 -0.84129,0.58085 -3.68918,2.54609 -3.68815,-2.54558 z"
+       id="rect1113"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,3.8606945)"
+       id="use1175"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,7.7213885)"
+       id="use1177"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,11.582082)"
+       id="use1179"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,15.442776)"
+       id="use1181"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,19.30347)"
+       id="use1183"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,23.164165)"
+       id="use1185"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <use
+       x="0"
+       y="0"
+       inkscape:tiled-clone-of="#rect1113"
+       xlink:href="#rect1113"
+       transform="translate(4.2984334e-7,27.024855)"
+       id="use1187"
+       style="stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="opacity:1;fill:#5ce034;fill-opacity:1;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 542.87891 486.51562 C 537.10779 486.51562 532.46289 491.16248 532.46289 496.93359 C 532.46289 501.79159 539.87073 498.79888 542.05273 503.90234 C 536.77564 549.49491 542.22656 607.51642 542.22656 616.4668 C 542.22656 626.19938 532.46289 621.29937 532.46289 626.84961 C 532.46289 632.62072 537.10971 637.26758 542.88086 637.26758 L 613.21289 637.26758 C 618.984 637.26758 623.62891 632.62072 623.62891 626.84961 C 623.62891 621.99162 616.22107 624.98432 614.03906 619.88086 C 619.31616 574.28829 613.86523 516.26678 613.86523 507.31641 C 613.86523 497.58382 623.62891 502.48383 623.62891 496.93359 C 623.62891 491.16248 618.98209 486.51562 613.21094 486.51562 L 542.87891 486.51562 z "
+       transform="scale(0.26458333)"
+       id="rect865"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <ellipse
+       style="opacity:0.98000004;fill:#7b7b7b;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1226"
+       cx="152.7361"
+       cy="145.55725"
+       rx="11.636457"
+       ry="14.009174"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="opacity:1;fill:#2a2a2a;fill-opacity:1;stroke:#000000;stroke-width:0.27774033;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 149.91129,121.18264 c 0,0 -0.20348,2.30865 0,3.42953 0.15522,0.85503 0.91315,2.41423 0.91315,2.41423 v 12.46623 h -3.02748 c -0.55464,0 -1.00141,0.4934 -1.00141,1.10594 v 4.34846 c 0,0.61253 0.44677,1.10594 1.00141,1.10594 h 9.87787 c 0.55464,0 1.00141,-0.49341 1.00141,-1.10594 v -4.34846 c 0,-0.61254 -0.44677,-1.10594 -1.00141,-1.10594 h -3.02748 V 127.0264 c 0,0 0.75793,-1.5592 0.91315,-2.41423 0.20348,-1.12088 0,-3.42953 0,-3.42953 z"
+       id="rect860"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <path
+       style="opacity:0.98000004;fill:#353535;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 145.1221,140.86755 a 7.6650289,10.31548 0 0 0 -0.0512,1.14407 7.6650289,10.31548 0 0 0 7.66505,10.31557 7.6650289,10.31548 0 0 0 7.66504,-10.31557 7.6650289,10.31548 0 0 0 -0.0564,-1.14407 z"
+       id="ellipse1228"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <rect
+       style="opacity:1;fill:#525252;fill-opacity:1;stroke:#000000;stroke-width:0.26458333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect858"
+       width="15.033911"
+       height="2.0045214"
+       x="145.21899"
+       y="145.50217"
+       ry="1.0022607"
+       inkscape:export-filename="/home/marco/Immagini/tank_test.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500" />
+    <circle
+       style="opacity:1;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:0.1271181;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path864"
+       cx="27.539103"
+       cy="31.840488"
+       r="22.427267" />
+    <g
+       id="g887"
+       transform="matrix(0.48044639,0,0,0.48044639,-19.585401,1.9198321)"
+       style="stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <rect
+         ry="0"
+         y="35.440475"
+         x="71.24852"
+         height="26.836309"
+         width="26.836309"
+         id="rect873"
+         style="opacity:1;fill:#ff0003;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#00ff08;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect876"
+         width="26.836309"
+         height="26.836309"
+         x="98.084831"
+         y="35.440475"
+         ry="0" />
+      <rect
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect878"
+         width="26.836309"
+         height="26.836309"
+         x="71.24852"
+         y="62.276787"
+         ry="0" />
+      <rect
+         ry="0"
+         y="62.276787"
+         x="98.084831"
+         height="26.836309"
+         width="26.836309"
+         id="rect880"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
